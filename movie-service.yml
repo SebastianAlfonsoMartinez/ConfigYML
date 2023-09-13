@@ -26,8 +26,6 @@ queue:
   movie:
     name: UnaQueue
 
-message: registro exitoso
-
 eureka:
   client:
     register-with-eureka: true
