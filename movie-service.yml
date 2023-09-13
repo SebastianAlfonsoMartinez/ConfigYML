@@ -22,6 +22,12 @@ spring:
     host: localhost
     port: 5672
 
+queue:
+  catalog:
+    name: UnaQueue
+
+message: registro exitoso
+
 eureka:
   client:
     register-with-eureka: true
