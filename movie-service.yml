@@ -23,7 +23,7 @@ spring:
     port: 5672
 
 queue:
-  catalog:
+  movie:
     name: UnaQueue
 
 message: registro exitoso
