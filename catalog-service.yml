@@ -14,7 +14,7 @@ spring:
     enabled: true
   mongodb:
     embedded:
-      version: 3.6.0
+      version: 4.0.2
   data:
     mongodb:
       database: test
@@ -24,6 +24,9 @@ spring:
 queue:
   movie:
     name: UnaQueue
+  serie:
+    name: SerieQueue
+
 
 
 eureka:
