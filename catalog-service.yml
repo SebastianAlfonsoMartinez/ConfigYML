@@ -20,14 +20,6 @@ spring:
       database: test
       port: 27018
 
-exchange:
-  persona:
-    name: PeliculaExchange
-queue:
-  pelicula:
-    name: PeliculaQueue
-
-message: PeliculaQueue
 
 eureka:
   client:
