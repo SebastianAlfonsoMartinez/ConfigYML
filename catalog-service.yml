@@ -54,6 +54,21 @@ management:
     web:
       exposure:
         include: "*"
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      series:
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 15000
+        permittedNumberOfCallsInHalfOpenState: 3
+        registerHealthIndicator: true
+        allowHealthIndicatorFail: false
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+
+
 info:
   app:
     name: "catalog-service"
