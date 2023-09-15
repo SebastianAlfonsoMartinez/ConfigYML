@@ -50,6 +50,8 @@ management:
     web:
       exposure:
         include: "*"
+    health:
+      show-details: always
 info:
   app:
     name: "serie-service"

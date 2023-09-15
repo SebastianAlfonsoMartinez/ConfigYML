@@ -19,6 +19,14 @@ spring:
     mongodb:
       database: test
       port: 27018
+  japa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
+  sql:
+    init:
+      data-location: classpath:catalog.sql
+
 
 
 queue:
@@ -73,6 +81,13 @@ resilience4j:
         allowHealthIndicatorFail: false
         automaticTransitionFromOpenToHalfOpenEnabled: true
 
+  retry:
+    instances:
+      series:
+        maxAttempts: 4
+        waitDuration: 1000
+        retryExceptions:
+          - feign.FeignException$InternalServerError
 
 info:
   app:
