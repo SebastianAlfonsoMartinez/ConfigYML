@@ -19,13 +19,13 @@ spring:
     mongodb:
       database: test
       port: 27018
-  jpa:
-    defer-datasource-initialization: true
-    hibernate:
-      ddl-auto: create-drop
-  sql:
-    init:
-      data-location: classpath:catalog.sql
+  #jpa:
+   # defer-datasource-initialization: true
+    #hibernate:
+     # ddl-auto: create-drop
+  #sql:
+   # init:
+    #  data-location: classpath:catalog.sql
 
 
 
