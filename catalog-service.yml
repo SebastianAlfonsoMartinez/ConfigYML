@@ -47,13 +47,18 @@ management:
   info:
     env:
       enabled: true
-  endpoint:
+  endpoints:
     info:
       enable: true
-  endpoints:
     web:
       exposure:
         include: "*"
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
 
 resilience4j:
   circuitbreaker:
