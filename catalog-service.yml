@@ -19,7 +19,7 @@ spring:
     mongodb:
       database: test
       port: 27018
-  japa:
+  jpa:
     defer-datasource-initialization: true
     hibernate:
       ddl-auto: create-drop
