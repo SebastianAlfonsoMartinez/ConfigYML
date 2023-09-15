@@ -44,9 +44,6 @@ eureka:
     lease-expiration-duration-in-seconds: 10
 
 management:
-  info:
-    env:
-      enabled: true
   endpoints:
     info:
       enable: true
